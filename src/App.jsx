@@ -8,11 +8,6 @@ import { FaCookieBite, FaGlassWhiskey, FaCandyCane } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// Carousel images
-import donot from "./img/donot.jpg";
-import cake2 from "./img/cake2.jpg";
-import nutshoc from "./img/nutschoc.jpg";
-
 function App() {
   return (
     <CartProvider>
@@ -85,7 +80,7 @@ function App() {
           <div className="carousel-inner">
             <div className="carousel-item active text-center">
               <img
-                src={donot}
+                src={${process.env.PUBLIC_URL}/img/donot.jpg}
                 className="d-block w-100"
                 alt="Donuts"
                 style={{ height: "400px", objectFit: "cover" }}
@@ -100,7 +95,7 @@ function App() {
 
             <div className="carousel-item text-center">
               <img
-                src={cake2}
+                src={${process.env.PUBLIC_URL}/img/cake2.jpg}
                 className="d-block w-100"
                 alt="Cake"
                 style={{ height: "400px", objectFit: "cover" }}
@@ -115,7 +110,7 @@ function App() {
 
             <div className="carousel-item text-center">
               <img
-                src={nutshoc}
+                src={`${process.env.PUBLIC_URL}/img/nutschoc.jpg`}
                 className="d-block w-100"
                 alt="Chocolate"
                 style={{ height: "400px", objectFit: "cover" }}
