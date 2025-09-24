@@ -80,7 +80,7 @@ function App() {
           <div className="carousel-inner">
             <div className="carousel-item active text-center">
               <img
-                src={${process.env.PUBLIC_URL}/img/donot.jpg}
+                src={`${process.env.PUBLIC_URL}/img/donot.jpg`}
                 className="d-block w-100"
                 alt="Donuts"
                 style={{ height: "400px", objectFit: "cover" }}
@@ -95,7 +95,7 @@ function App() {
 
             <div className="carousel-item text-center">
               <img
-                src={${process.env.PUBLIC_URL}/img/cake2.jpg}
+                src={`${process.env.PUBLIC_URL}/img/cake2.jpg`}
                 className="d-block w-100"
                 alt="Cake"
                 style={{ height: "400px", objectFit: "cover" }}
